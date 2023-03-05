@@ -1,3 +1,4 @@
+from DzieńUrodzin.DzienUrodzin import DzienUrodzin
 from GeneratorHaselKomenda.GeneratorHaselKomenda import GeneratorHaselKomenda
 from GeneratorHaseł.GeneratorHasel import GeneratorHasel
 from Quiz.Quiz import Quiz
@@ -11,6 +12,7 @@ print("3. Uruchom projekt GeneratorHasełKomenda")
 print("4. Uruchom projekt Quiz")
 print("5. Uruchom projekt ŚledzenieWydatków")
 print("6. Uruchom projekt ToDoListSQLlite ")
+print("7. Uruchom projekt DzieńUrodzin")
 
 menu = int(input("Wybierz projekt: "))
 if menu == 1:
@@ -30,3 +32,6 @@ elif menu == 5:
 
 elif menu == 6:
     ToDoListSQLlite().to_do_list_sql_lile_main()
+
+elif menu == 7:
+    DzienUrodzin().main_dzien_urodzin()
