@@ -1,4 +1,4 @@
-class SledzenieWydatkow:
+class ExpenseTrack:
 
     def __init__(self):
         self.expenses = []
@@ -51,10 +51,10 @@ class SledzenieWydatkow:
                     break
 
                 if choice == 1:
-                    SledzenieWydatkow.show_expenses(self, month)
+                    ExpenseTrack.show_expenses(self, month)
 
                 if choice == 2:
-                    SledzenieWydatkow.add_expense(self, month)
+                    ExpenseTrack.add_expense(self, month)
 
                 if choice == 3:
-                    SledzenieWydatkow.show_stats(self, month)
+                    ExpenseTrack.show_stats(self, month)

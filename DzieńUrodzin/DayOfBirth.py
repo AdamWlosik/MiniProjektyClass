@@ -2,7 +2,7 @@ import calendar
 import datetime
 
 
-class DzienUrodzin:
+class DayOfBirth:
 
     @staticmethod
     def translate_to_polish(day_name):
@@ -37,4 +37,4 @@ class DzienUrodzin:
         date_of_birth = datetime.datetime(int(year), int(month), int(day))
 
         day_name = calendar.day_name[date_of_birth.weekday()]
-        print(DzienUrodzin.translate_to_polish(day_name))
+        print(DayOfBirth.translate_to_polish(day_name))

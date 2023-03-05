@@ -1,10 +1,10 @@
-from DzieńUrodzin.DzienUrodzin import DzienUrodzin
-from GeneratorHaselKomenda.GeneratorHaselKomenda import GeneratorHaselKomenda
-from GeneratorHaseł.GeneratorHasel import GeneratorHasel
+from DzieńUrodzin.DayOfBirth import DayOfBirth
+from GeneratorHaselKomenda.CommendPasswordGenerator import CommendPasswordGenerator
+from GeneratorHaseł.PasswordGenerator import PasswordGenerator
 from Quiz.Quiz import Quiz
-from SledzenieWydatków.SledzenieWydatków import SledzenieWydatkow
+from SledzenieWydatków.ExpenseTrack import ExpenseTrack
 from ToDoListSQLlite.ToDoListSQLlite import ToDoListSQLlite
-from Wisielec.Wisielec import Wisielec
+from Wisielec.Hangman import Hangman
 
 print("1. Uruchom projekt Wisielec")
 print("2. Uruchom projekt GeneratorHaseł")
@@ -16,22 +16,22 @@ print("7. Uruchom projekt DzieńUrodzin")
 
 menu = int(input("Wybierz projekt: "))
 if menu == 1:
-    Wisielec().main_wisielec()
+    Hangman().main_wisielec()
 
 elif menu == 2:
-    GeneratorHasel().main_generator_hasel()
+    PasswordGenerator().main_generator_hasel()
 
 elif menu == 3:
-    GeneratorHaselKomenda().main_generator_hasel_komenda()
+    CommendPasswordGenerator().main_generator_hasel_komenda()
 
 elif menu == 4:
     Quiz().quiz_main()
 
 elif menu == 5:
-    SledzenieWydatkow().main_sledzenie_wydatkow()
+    ExpenseTrack().main_sledzenie_wydatkow()
 
 elif menu == 6:
     ToDoListSQLlite().to_do_list_sql_lile_main()
 
 elif menu == 7:
-    DzienUrodzin().main_dzien_urodzin()
+    DayOfBirth().main_dzien_urodzin()

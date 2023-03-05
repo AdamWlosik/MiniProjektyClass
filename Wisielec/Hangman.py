@@ -1,7 +1,7 @@
 import sys
 
 
-class Wisielec:
+class Hangman:
 
     def __init__(self):
         self.found_indexes = None
@@ -33,7 +33,7 @@ class Wisielec:
             letter = input("Podaj literę: ")
 
             self.used_letters.append(letter)
-            self.found_indexes = Wisielec.find_indexes(self.word, letter)
+            self.found_indexes = Hangman.find_indexes(self.word, letter)
 
             if len(self.found_indexes) == 0:
                 print("Nie ma takiej litery.")

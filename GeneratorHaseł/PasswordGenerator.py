@@ -3,7 +3,7 @@ import string
 import sys
 
 
-class GeneratorHasel:
+class PasswordGenerator:
 
     def __init__(self):
         self.password = []
@@ -29,16 +29,16 @@ class GeneratorHasel:
             self.characters_left = self.password_length
 
         lowercase_letters = int(input("Ile małych liter ma mieć hasło? "))
-        GeneratorHasel.update_characters_left(self, lowercase_letters)
+        PasswordGenerator.update_characters_left(self, lowercase_letters)
 
         uppercase_letter = int(input("Ile dużych liter ma mieć hasło? "))
-        GeneratorHasel.update_characters_left(self, uppercase_letter)
+        PasswordGenerator.update_characters_left(self, uppercase_letter)
 
         special_characters = int(input("Ile znaków specjalnych ma mieć hasło? "))
-        GeneratorHasel.update_characters_left(self, special_characters)
+        PasswordGenerator.update_characters_left(self, special_characters)
 
         digits = int(input("Ile cyfr ma mieć hasło? "))
-        GeneratorHasel.update_characters_left(self, digits)
+        PasswordGenerator.update_characters_left(self, digits)
 
         if self.characters_left > 0:
             print("Nie wszystkie znaki zostały wykorzystane hasło zostanie uzupełnione małymi literami")
