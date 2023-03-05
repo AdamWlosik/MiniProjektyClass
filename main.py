@@ -1,3 +1,4 @@
+from AvatarGenerator.AvatarGenerator import AvatarGenerator
 from DzieńUrodzin.DayOfBirth import DayOfBirth
 from GeneratorHaselKomenda.CommendPasswordGenerator import CommendPasswordGenerator
 from GeneratorHaseł.PasswordGenerator import PasswordGenerator
@@ -13,6 +14,7 @@ print("4. Uruchom projekt Quiz")
 print("5. Uruchom projekt ŚledzenieWydatków")
 print("6. Uruchom projekt ToDoListSQLlite ")
 print("7. Uruchom projekt DzieńUrodzin")
+print("8. Uruchom projekt AvatarGenerator")
 
 menu = int(input("Wybierz projekt: "))
 if menu == 1:
@@ -35,3 +37,6 @@ elif menu == 6:
 
 elif menu == 7:
     DayOfBirth().main_dzien_urodzin()
+
+elif menu == 8:
+    AvatarGenerator().avatar_generator()
