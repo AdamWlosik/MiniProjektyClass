@@ -1,4 +1,5 @@
 from AvatarGenerator.AvatarGenerator import AvatarGenerator
+from CitiesSQL.CitiesSQL import CitiesSQL
 from DzieńUrodzin.DayOfBirth import DayOfBirth
 from GeneratorHaselKomenda.CommendPasswordGenerator import CommendPasswordGenerator
 from GeneratorHaseł.PasswordGenerator import PasswordGenerator
@@ -7,6 +8,9 @@ from SledzenieWydatków.ExpenseTrack import ExpenseTrack
 from ToDoListSQLlite.ToDoListSQLlite import ToDoListSQLlite
 from Wisielec.Hangman import Hangman
 
+print()
+print("Aby uruchomić wybierz numer projektu, funkcje main w klasach będą edytowane w przyszłości")
+print()
 print("1. Uruchom projekt Wisielec")
 print("2. Uruchom projekt GeneratorHaseł")
 print("3. Uruchom projekt GeneratorHasełKomenda")
@@ -15,6 +19,7 @@ print("5. Uruchom projekt ŚledzenieWydatków")
 print("6. Uruchom projekt ToDoListSQLlite ")
 print("7. Uruchom projekt DzieńUrodzin")
 print("8. Uruchom projekt AvatarGenerator")
+print("9. Uruchom projekt CitiesSQL")
 
 menu = int(input("Wybierz projekt: "))
 if menu == 1:
@@ -40,3 +45,6 @@ elif menu == 7:
 
 elif menu == 8:
     AvatarGenerator().avatar_generator()
+
+elif menu == 9:
+    CitiesSQL().cities_main()
