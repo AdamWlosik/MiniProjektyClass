@@ -10,6 +10,7 @@ class ToDoListSQLlite:
             cursor.execute("""CREATE TABLE task(task text)""")
         except:
             pass
+        # nie zwraca błędu, jeśli tabela jest już utowrzona
 
     @staticmethod
     def show_tasks(connection):
