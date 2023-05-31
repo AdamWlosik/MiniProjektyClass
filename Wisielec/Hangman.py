@@ -42,6 +42,7 @@ class Hangman:
 
                 if self.no_of_tries == 0:
                     print("Koniec gry")
+                    print("Hasło to: ", self.word)
                     sys.exit(0)
             else:
                 for index in self.found_indexes:
