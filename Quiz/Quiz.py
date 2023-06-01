@@ -25,7 +25,7 @@ class Quiz:
             print("To błędna odpowiedź, prawidłową odpowiedzią jest ", question["prawidlowa odpowiedz"])
 
     def quiz_main(self):
-        with open(r"C:\Users\adamw\OneDrive\Pulpit\Python\MiniProjekty\Quiz\quiz.json") as json_file:
+        with open(r"C:\Users\adamw\OneDrive\Pulpit\stary pi\Python\MiniProjekty\Quiz\quiz.json") as json_file:
             questions = json.load(json_file)
 
             for i in range(0, len(questions)):
